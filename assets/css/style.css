@@ -531,13 +531,17 @@ main {
   scroll-snap-align: center;
 }
 
+.testimonials-avatar-box img{
+  border-radius: 50px;
+}
+
 .testimonials-avatar-box {
   position: absolute;
   top: 0;
   left: 0;
   transform: translate(15px, -25px);
   background: var(--bg-gradient-onyx);
-  border-radius: 14px;
+  border-radius: 60px;
   box-shadow: var(--shadow-1);
 }
 
@@ -670,6 +674,39 @@ main {
 
 
 
+.clients { 
+  margin-bottom: 15px; 
+}
+
+.clients-list { 
+  display: flex; 
+  justify-content: flex-start; 
+  align-items: flex-start; 
+  gap: 15px; 
+  margin: 0 -15px; 
+  padding: 25px; 
+  padding-bottom: 25px; 
+  overflow-x: auto; 
+  scroll-behavior: smooth; 
+  overscroll-behavior-inline: contain; 
+  scroll-snap-type: inline mandatory; 
+  scroll-padding-inline: 25px; 
+}
+
+.clients-item { 
+  min-width: 50%; 
+  scroll-snap-align: start; 
+}
+
+.clients-item img { 
+  border-radius: 15px;
+  width: 100%; 
+  transition: var(--transition-1); 
+}
+
+
+/* 
+
 .clients { margin-bottom: 15px; }
 
 .clients-list {
@@ -698,7 +735,7 @@ main {
   transition: var(--transition-1);
 }
 
-.clients-item img:hover { filter: grayscale(0); }
+.clients-item img:hover { filter: grayscale(0); } */
 
 
 
